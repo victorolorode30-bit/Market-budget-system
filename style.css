@@ -1,0 +1,163 @@
+• {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif;
+background: #f5f7f6;
+padding: 30px;
+}
+
+.container {
+max-width: 1100px;
+margin: auto;
+}
+
+/* Header */
+header {
+background: #086b35;
+color: white;
+padding: 25px;
+text-align: center;
+border-radius: 12px;
+margin-bottom: 25px;
+}
+
+/* Budget Input */
+.budget-input {
+background: white;
+padding: 25px;
+display: flex;
+align-items: center;
+gap: 15px;
+border-radius: 12px;
+margin-bottom: 20px;
+}
+
+label {
+font-weight: bold;
+}
+
+input {
+padding: 15px;
+border: 1px solid #ccc;
+border-radius: 8px;
+font-size: 16px;
+width: 100%;
+}
+
+button {
+background: #087638;
+color: white;
+border: none;
+padding: 15px 25px;
+border-radius: 8px;
+cursor: pointer;
+font-size: 16px;
+}
+
+/* Remaining Budget */
+.remaining {
+background: #d9f5e2;
+color: #086b35;
+padding: 30px;
+border-radius: 12px;
+margin-bottom: 25px;
+}
+#remainin{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.remaining h1 {
+font-size: 45px;
+margin-top: 10px;
+}
+
+/* Add Item */
+.add-item {
+background: white;
+padding: 25px;
+border-radius: 12px;
+margin-bottom: 25px;
+}
+
+.add-item h2 {
+margin-bottom: 20px;
+}
+
+.input-group {
+display: flex;
+align-items: end;
+gap: 20px;
+}
+#itemPrice{
+    margin-left: 20px;
+}
+
+.input-group div {
+flex: 1;
+}
+
+#good{
+   margin-left:25px ;
+}
+.input-group label {
+display: block;
+margin-bottom: 10px;
+/* margin-left: 20px; */
+}
+.okay{
+    margin-left: 40px;
+}
+
+/* Recent Items */
+.recent-items {
+background: white;
+border-radius: 12px;
+overflow: hidden;
+}
+
+.recent-header {
+background: #d9f5e2;
+padding: 18px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.items-list {
+padding: 40px;
+text-align: center;
+color: gray;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+
+body {
+padding: 15px;
+}
+
+.budget-input {
+flex-direction: column;
+align-items: stretch;
+}
+
+.input-group {
+flex-direction: column;
+align-items: stretch;
+}
+
+.remaining h1 {
+font-size: 32px;
+}
+
+.recent-header {
+flex-direction: column;
+gap: 10px;
+}
+
+}

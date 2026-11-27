@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Budget System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<header>
+<h1>🛒 Market Budget System</h1>
+</header>
+
+<!-- Budget Input -->
+<div class="budget-input">
+<label>Enter Your Budget:</label>
+<input type="number" placeholder="Enter amount" id="budget">
+<button onclick="setBudget()">Set Budget</button>
+</div>
+
+<!-- Remaining Budget -->
+<div class="remaining">
+<h3 >Remaining Budget</h3>
+<div id="remainin"></div>
+</div>
+
+<!-- Add Item -->
+<div class="add-item">
+<h2>+ Add Item</h2>
+
+<div class="input-group">
+<div>
+<label >Item Name</label>
+<input type="text" placeholder="e.g. Rice" id="itemName">
+</div>
+
+<div>
+<label id="good">Price</label>
+<input type="number" placeholder="e.g. 15000" id="itemPrice">
+</div>
+
+<button   class="okay" onclick="additem()">Add Item</button>
+</div>
+</div>
+
+<!-- Recent Items -->
+<div class="recent-items">
+
+<div class="recent-header">
+<h2>Recent Items</h2>
+<h3 id="totalSpent">Total Spent: ₦0</h3>
+</div>
+
+<div class="items-list" id="itemList">
+<p id="emptymessage">No items yet. Add your first item!</p>
+</div>
+
+</div>
+
+</div>
+
+<script src="market.js"></script>
+
+</body>
+</html>
